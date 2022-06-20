@@ -5,8 +5,12 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 }
+
 body{
     background-color: rgb(20, 30, 40);
+    background-image: url(images/pexels-cottonbro-3171129.jpg);
+    background-size: cover;
+    background-blend-mode: soft-light;
     scroll-behavior: smooth;
 }
 
@@ -24,16 +28,19 @@ body{
     text-align: center;
     color: linen;
 }
+
 .container_a img{
     width: 3em;
     position: relative;
     margin-left: 0;
     
 }
+
 .container_a h1{
     position: relative;
     margin-right: 0;
 }
+
 .container_b{
     display: flex;
     flex-wrap: wrap;
@@ -57,21 +64,22 @@ body{
     font-weight: 600;
     
 }
+
 .container_b img{
     width: 50vh;
 }
 
 .index_main{
     max-width: 70vw;
-    margin: 10em auto 15em auto;
-    
-
+    margin: 10em auto 15em auto;   
 }
+
 .index_ul a{
     text-decoration: none;
     font-weight: 250;
     color: rgb(255, 255, 255);
 }
+
 .index_li{
     position: relative;
     display: flex;
@@ -86,6 +94,7 @@ body{
     gap: 5em;
     flex-wrap: wrap;
 }
+
 .index_li img{
     width: 300px;
 }
@@ -96,15 +105,19 @@ body{
     margin-bottom: 1.8em;
     
 }
+
 #li_a{
     gap: 15em;
 }
+
 #li_b{
     gap: 8em;
 }
+
 #li_c{
     gap: 1em;
 }
+
 #li_c span{
     margin-bottom: 2.2em;
 }
@@ -117,10 +130,12 @@ border-left: 0;
 border-right: 0;
 
 }
+
 .footer{
     display: flex;
     flex-wrap: wrap;
 }
+
 .footer a, .footer p{
     display: flex;
     justify-content: center;
@@ -128,12 +143,15 @@ border-right: 0;
     text-decoration: none;
     color: linen;
 }
+
 .footer img{
     max-width: 4em;
 } 
+
 #footer_odin{
     max-width: 2.5em;
 } 
+
 #footer_span {
     /* font-family: monospace; */
     font-size: 1.5rem;
@@ -141,11 +159,11 @@ border-right: 0;
 }
 
 /* Style recipes folder */
+
 .container_b_recipes{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
     padding: 0em 2em;
     background-color: rgba(255, 255, 255, 0.151);
     border: 2px solid orangered;
@@ -155,41 +173,51 @@ border-right: 0;
     position: relative;
     margin-bottom: 3em;
 }
+
 #sambusa{
     max-width: 25em;
 }
+
 #banana{
     max-width: 80em;
 }
+
 #fish{
     max-width: 25em;
 }
+
 .container_b_recipes h2{
     color: linen;
     font-size: 3rem;
     font-weight: 300;
 }
+
 .quote{
     max-width: 70vw;
     margin-bottom: 3em;
 }
+
 .quote hr{
     border: 2px solid rgba(250, 240, 230, 0.226);
     border-radius: 3px;
 }
+
 .quote h3{
     margin: 2em auto;
     color: orangered;
     font-size: 2em;
     font-weight: 400;
 }
+
 .quote h3::before{
     content: '" ';
     
 }
+
 .quote h3::after{
     content: ' "';
 }
+
 .index_main_recipes{
     max-width: 70vw;
     margin-bottom: 1em;
@@ -199,6 +227,7 @@ border-right: 0;
     flex-direction: column;
     color: rgb(20, 30, 40);
 }
+
 .ingredients, .steps{
     margin-bottom: 3em;
     background-color: rgb(247, 203, 84);
@@ -206,48 +235,122 @@ border-right: 0;
     padding: 2em 5em;
     border-radius: 3em;
 }
+
 .ingredients h4::after{
     content: "Original recipe yields 6 servings";
     font-weight: 300;
     font-size: .8rem;
     margin-left: 1em;
 }
+
 .fish_ingredients h4::after{
     content: "Original recipe yields 4 servings";
     font-weight: 300;
     font-size: .8rem;
     margin-left: 1em;
 }
+
 .sambusa_ingredients h4::after{
     content: "Original recipe yields 24 servings";
     font-weight: 300;
     font-size: .8rem;
     margin-left: 1em;
 }
+
 .ingredients h4, .steps h4{
     font-size: 2em;
     margin-bottom: .7em;
     /* color: rgb(20, 30, 40); */
 }
+
 .ingredients li, .steps li{
     margin-bottom: .7em;
     word-spacing: 2.5px;
 }
+
 .page_btn{
     display: flex;
     position: relative;
     max-width: 70vw;
     margin-bottom: 4em;
 }
+
 .btn{
     font-size: 2em;
     padding: .5em 1em;
     border-radius: 3em;
-    border: 0px;
+    /* border: 0px; */
     background-color: orangered;
+    border: 3px solid orangered;
     color: linen;
 }
 
 
+/* Animations & effects */
+
+#index_sambusa{
+    transition-property: transform;
+    transition-duration: 3000ms;
+    animation: throbe 6000ms ease-in-out 2000ms infinite alternate;
+}
+
+@keyframes throbe{
+    /* from{transform: rotate(15deg);}
+    to{transform: rotate(-10deg);} */
+    0%{transform: scale1(1);}
+    25%{transform: scale(0.9);}
+    50%{transform: scale(1);}
+    75%{transform: scale(0.9);}
+    100%{transform: scale(1);}
+}
+
+#index_banana{
+    transition-property: transform;
+    transition-duration: 3000ms;
+    animation: throbe_b 6000ms ease-in-out 2000ms infinite alternate;
+}
+
+@keyframes throbe_b{
+    0%{transform: scale(0.9);}
+    30%{transform: scale(1);}
+    60%{transform: scale(0.9);}
+    100%{transform: scale(1);}
+}
+
+#index_fish{
+    transition-property: transform;
+    transition-duration: 3000ms;
+    animation: throbe_c 6000ms ease-in-out 2000ms infinite alternate;
+}
+
+@keyframes throbe_c{
+    0%{transform: scale1(1);}
+    30%{transform: scale(0.9);}
+    60%{transform: scale(1);}
+    100%{transform: scale(0.9);}
+}
+
+.index_li:hover{
+    background-color: rgba(250, 134, 39, 0.26);
+    border: 3px solid whitesmoke;
+    
+}
+
+.index_li img:hover{
+    width: 300px;
+}
+
+
+.btn{
+    transition-property: background-color, color, border;
+    transition-duration: 2000ms;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.btn:hover{
+    background-color: rgb(247, 203, 84);
+    color: rgb(20, 30, 40);
+    border: 3px solid orangered;
+
+}
 
 
