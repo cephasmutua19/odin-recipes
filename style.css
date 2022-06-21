@@ -273,15 +273,19 @@ border-right: 0;
     max-width: 70vw;
     margin-bottom: 4em;
 }
-
 .btn{
+    background-color: transparent;
+    border: 0px;
+}
+
+.btn a{
     font-size: 2em;
     padding: .5em 1em;
     border-radius: 3em;
-    /* border: 0px; */
     background-color: orangered;
     border: 3px solid orangered;
     color: linen;
+    text-decoration: none;
 }
 
 
@@ -338,12 +342,12 @@ border-right: 0;
 }
 
 
-.btn{
+.btn a{
     transition-property: background-color, color, border;
     transition-duration: 2000ms;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.btn:hover{
+.btn a:hover{
     background-color: rgb(247, 203, 84);
     color: rgb(20, 30, 40);
     border: 3px solid orangered;
