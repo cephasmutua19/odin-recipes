@@ -74,13 +74,13 @@ body{
     margin: 10em auto 15em auto;   
 }
 
-.index_ul a{
+.index_ul .index_li a{
     text-decoration: none;
     font-weight: 250;
     color: rgb(255, 255, 255);
 }
 
-.index_li{
+.index_li a{
     position: relative;
     display: flex;
     justify-content: center;
@@ -95,31 +95,31 @@ body{
     flex-wrap: wrap;
 }
 
-.index_li img{
+.index_li a img{
     width: 300px;
 }
 
-.index_li span{
+.index_li a span{
     font-size: 4rem;  
     padding: 0 1em;  
     margin-bottom: 1.8em;
     
 }
 
-#li_a{
-    gap: 15em;
+#li_a a{
+    gap: 13em;
 }
 
-#li_b{
+#li_b a{
     gap: 8em;
 }
 
-#li_c{
+#li_c a{
     gap: 1em;
 }
 
-#li_c span{
-    margin-bottom: 2.2em;
+#li_c a span{
+    margin-bottom: 2em;
 }
 
 .footer{
@@ -152,8 +152,7 @@ border-right: 0;
     max-width: 2.5em;
 } 
 
-#footer_span {
-    /* font-family: monospace; */
+.footer_span {
     font-size: 1.5rem;
     font-weight: 200;
 }
@@ -295,8 +294,6 @@ border-right: 0;
 }
 
 @keyframes throbe{
-    /* from{transform: rotate(15deg);}
-    to{transform: rotate(-10deg);} */
     0%{transform: scale1(1);}
     25%{transform: scale(0.9);}
     50%{transform: scale(1);}
@@ -330,13 +327,13 @@ border-right: 0;
     100%{transform: scale(0.9);}
 }
 
-.index_li:hover{
+.index_li a:hover{
     background-color: rgba(250, 134, 39, 0.26);
     border: 3px solid whitesmoke;
     
 }
 
-.index_li img:hover{
+.index_li a img:hover{
     width: 300px;
 }
 
