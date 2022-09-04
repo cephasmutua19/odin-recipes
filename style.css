@@ -390,6 +390,7 @@ body{
 
     .content-box img{
         width: 130px;
+        height:auto;
     }
 
     .content-box h2{
@@ -516,6 +517,7 @@ body{
 
     .content-box img{
         width: 60px;
+        height:auto;
     }
 
     .content-box h2{
