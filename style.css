@@ -6,8 +6,8 @@
 }
 
 body{
-    background-color: #1b1b0b;
-    background-image: url(./images/pexels-cottonbro-3171129.jpg);
+    background-color: #1b1b0bab;
+    background-image: url(./image/pexels-cottonbro-3171129.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -213,7 +213,7 @@ body{
 
 .quote h3{
     margin: 2em auto;
-    color: orangered;
+    color: rgb(241, 249, 252);
     font-size: 2em;
     font-weight: 400;
 }
